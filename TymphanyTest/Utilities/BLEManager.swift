@@ -11,37 +11,6 @@ import CoreBluetooth
 enum DeviceStatus: Int {
     case notConnected, connecting, connected
     
-//    var color: UIColor {
-//        switch self {
-//        case .notConnected:
-//            return .red
-//        case .connecting:
-//            return AppColors.connectingColor
-//        case .connected:
-//            return AppColors.connectedColor
-//        }
-//    }
-    
-    var title: String {
-        switch self {
-        case .notConnected:
-            return "Device_Status_NotConnected"
-        case .connecting:
-            return "Device_Status_Connecting"
-        case .connected:
-            return "Device_Status_Connected"
-        }
-    }
-    
-//    var image: UIImage {
-//        switch self {
-//        case .notConnected:
-//            return AppImages.ic_set_device_disconnected
-//        case .connecting, .connected:
-//            return AppImages.ic_set_device_connected
-//        }
-//    }
-    
     init(cbPeripheralState: CBPeripheralState) {
         switch cbPeripheralState {
         case .connecting:
@@ -87,11 +56,9 @@ class BLEManager: NSObject {
     private var manager: CBCentralManager?
     private var dictPeripheral: [String:CBPeripheral] = [:]
     
-//    private let uartService = "1fee6acf-a826-4e37- 9635-4d8a01642c5d"
-//    private let uartCharacteristic = "7691b78a-9015-4367- 9b95-fc631c412cc6"
-    private let uartService = "6E400001-B5A3-F393-E0A9-E50E24DCCA9E"
-    private let uartCharacteristic = "6E400003-B5A3-F393-E0A9-E50E24DCCA9E"
-
+    private let uartService = "1fee6acf-a826-4e37- 9635-4d8a01642c5d"
+    private let uartCharacteristic = "7691b78a-9015-4367- 9b95-fc631c412cc6"
+    
     func scan() {
         if manager == nil {
             manager = CBCentralManager(delegate: self, queue: nil)

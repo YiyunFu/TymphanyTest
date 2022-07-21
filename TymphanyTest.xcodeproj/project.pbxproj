@@ -10,9 +10,15 @@
 		094E534B2888EA9E00857ED4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094E534A2888EA9E00857ED4 /* AppDelegate.swift */; };
 		094E534D2888EA9E00857ED4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094E534C2888EA9E00857ED4 /* SceneDelegate.swift */; };
 		094E534F2888EA9E00857ED4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094E534E2888EA9E00857ED4 /* ViewController.swift */; };
-		094E53522888EA9E00857ED4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 094E53502888EA9E00857ED4 /* Main.storyboard */; };
 		094E53542888EAA500857ED4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 094E53532888EAA500857ED4 /* Assets.xcassets */; };
 		094E53572888EAA500857ED4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 094E53552888EAA500857ED4 /* LaunchScreen.storyboard */; };
+		094E53602888EEA200857ED4 /* BLEManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094E535F2888EEA200857ED4 /* BLEManager.swift */; };
+		094E53622888EF4900857ED4 /* PermissionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094E53612888EF4900857ED4 /* PermissionHandler.swift */; };
+		094E53642888EF8100857ED4 /* AppAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094E53632888EF8100857ED4 /* AppAlert.swift */; };
+		099C321328890F3900AE6FDA /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099C321228890F3900AE6FDA /* String+Extension.swift */; };
+		099C321528890FDA00AE6FDA /* Data+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099C321428890FDA00AE6FDA /* Data+Extension.swift */; };
+		099C321A288911B400AE6FDA /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099C3219288911B400AE6FDA /* TableViewCell.swift */; };
+		099C321C2889162200AE6FDA /* CustomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099C321B2889162200AE6FDA /* CustomNavigationBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +26,16 @@
 		094E534A2888EA9E00857ED4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		094E534C2888EA9E00857ED4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		094E534E2888EA9E00857ED4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		094E53512888EA9E00857ED4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		094E53532888EAA500857ED4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		094E53562888EAA500857ED4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		094E53582888EAA500857ED4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		094E535F2888EEA200857ED4 /* BLEManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BLEManager.swift; sourceTree = "<group>"; };
+		094E53612888EF4900857ED4 /* PermissionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionHandler.swift; sourceTree = "<group>"; };
+		094E53632888EF8100857ED4 /* AppAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAlert.swift; sourceTree = "<group>"; };
+		099C321228890F3900AE6FDA /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		099C321428890FDA00AE6FDA /* Data+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Extension.swift"; sourceTree = "<group>"; };
+		099C3219288911B400AE6FDA /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		099C321B2889162200AE6FDA /* CustomNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +68,53 @@
 		094E53492888EA9E00857ED4 /* TymphanyTest */ = {
 			isa = PBXGroup;
 			children = (
+				094E535E2888EE5800857ED4 /* Utilities */,
 				094E534A2888EA9E00857ED4 /* AppDelegate.swift */,
 				094E534C2888EA9E00857ED4 /* SceneDelegate.swift */,
-				094E534E2888EA9E00857ED4 /* ViewController.swift */,
-				094E53502888EA9E00857ED4 /* Main.storyboard */,
+				099C32182889119D00AE6FDA /* Components */,
+				099C3217288910F300AE6FDA /* ViewControllers */,
 				094E53532888EAA500857ED4 /* Assets.xcassets */,
 				094E53552888EAA500857ED4 /* LaunchScreen.storyboard */,
 				094E53582888EAA500857ED4 /* Info.plist */,
 			);
 			path = TymphanyTest;
+			sourceTree = "<group>";
+		};
+		094E535E2888EE5800857ED4 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				094E53612888EF4900857ED4 /* PermissionHandler.swift */,
+				094E53632888EF8100857ED4 /* AppAlert.swift */,
+				094E535F2888EEA200857ED4 /* BLEManager.swift */,
+				099C321128890F2500AE6FDA /* Extensions */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		099C321128890F2500AE6FDA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				099C321428890FDA00AE6FDA /* Data+Extension.swift */,
+				099C321228890F3900AE6FDA /* String+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		099C3217288910F300AE6FDA /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				094E534E2888EA9E00857ED4 /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		099C32182889119D00AE6FDA /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				099C321B2889162200AE6FDA /* CustomNavigationBar.swift */,
+				099C3219288911B400AE6FDA /* TableViewCell.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +177,6 @@
 			files = (
 				094E53572888EAA500857ED4 /* LaunchScreen.storyboard in Resources */,
 				094E53542888EAA500857ED4 /* Assets.xcassets in Resources */,
-				094E53522888EA9E00857ED4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +187,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				099C321328890F3900AE6FDA /* String+Extension.swift in Sources */,
 				094E534F2888EA9E00857ED4 /* ViewController.swift in Sources */,
+				094E53602888EEA200857ED4 /* BLEManager.swift in Sources */,
+				099C321A288911B400AE6FDA /* TableViewCell.swift in Sources */,
+				099C321C2889162200AE6FDA /* CustomNavigationBar.swift in Sources */,
+				094E53642888EF8100857ED4 /* AppAlert.swift in Sources */,
 				094E534B2888EA9E00857ED4 /* AppDelegate.swift in Sources */,
+				094E53622888EF4900857ED4 /* PermissionHandler.swift in Sources */,
 				094E534D2888EA9E00857ED4 /* SceneDelegate.swift in Sources */,
+				099C321528890FDA00AE6FDA /* Data+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		094E53502888EA9E00857ED4 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				094E53512888EA9E00857ED4 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		094E53552888EAA500857ED4 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -292,9 +340,9 @@
 				INFOPLIST_FILE = TymphanyTest/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -320,9 +368,9 @@
 				INFOPLIST_FILE = TymphanyTest/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
